@@ -140,7 +140,7 @@ https://github.com/user-attachments/assets/ec81aca4-6128-4370-93a7-5cd4f5080502
 ### 3.1 Corner Case in Autonomous Driving
 
 * **示例 a** — The vehicle ahead brakes, prompting the ego vehicle to decelerate and stop.
-<video src="data/Carla/brake2.mp4" width="640" controls></video>
+  Please refer to Project Page for long-term video demo https://shanpoyang654.github.io/InstaDrive/page.html
   描述：模拟前车刹车场景，评估在突发制动情况下的生成与行驶行为可视化。
 
 * **示例 b** — Vehicle cutting in from the right lane. 
@@ -154,10 +154,11 @@ https://github.com/user-attachments/assets/4b51e9dc-fb1c-49a1-bba2-f51455a01220
 ### 3.2 Long-term Generation (2x speed)
 
 <video src="data/Carla/long3-final.mp4" width="640" controls></video>
-
+Please refer to Project Page for long-term video demo https://shanpoyang654.github.io/InstaDrive/page.html
 描述：展示模型在长时序生成下保持世界一致性和内容连贯性的能力。
 
 ---
+
 
 
 
