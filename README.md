@@ -27,12 +27,21 @@ By incorporating these instance-aware mechanisms, InstaDrive achieves state-of-t
 
 ### 1.1 Layout Controllability
 
-* **Example A** — Oncoming bus, parked car on center divider, pedestrian, roundabout, parked trucks.  
-https://github.com/user-attachments/assets/3f3d0b02-1dcc-4231-bd5c-89a684134bfa  
+* **Example A** — Oncoming bus, parked car on center divider, pedestrian, roundabout, parked trucks.
+
+
+https://github.com/user-attachments/assets/8992eb1e-289a-445c-975a-7ab8ab28088e
+
+
+
 Description: Drivable areas, sidewalks, and zebra crossings are faithfully generated according to the road map projections. Objects in the scene are accurately placed and sized.
 
 * **Example B** — Waiting at intersection, pedestrians on sidewalk, turning right, cones, crossing intersection.  
-https://github.com/user-attachments/assets/3df501f5-76a8-4a2c-98e7-70904261647e
+
+
+https://github.com/user-attachments/assets/4119b0a6-8012-4946-a8a9-4ce844eb2efc
+
+
 Description: Small and densely packed objects are rendered accurately at their correct positions following 3D bounding box coordinates. Objects maintain temporal consistency via instance flow guidance.
 
 ---
@@ -107,4 +116,5 @@ Please refer to the [Project Page](https://shanpoyang654.github.io/InstaDrive/pa
 Description: Demonstrates long-term generation consistency and coherent world modeling.
 
 ---
+
 
