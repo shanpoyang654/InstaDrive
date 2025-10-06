@@ -53,30 +53,49 @@ Description: Small and densely packed objects are rendered accurately at their c
 #### a. Instance-Level Temporal Consistency
 
 * **MagicDrive-V2 (baseline)**  
-[![MagicDrive-V2 Temporal](https://github.com/user-attachments/assets/abdabb8a-9c0d-466c-a552-5ff1ba2bf4ee)](https://github.com/user-attachments/assets/abdabb8a-9c0d-466c-a552-5ff1ba2bf4ee)
+
+
+https://github.com/user-attachments/assets/7acd3d1c-e0bf-4ee9-8454-4a143f5d978b
+
 
 * **InstaDrive**  
-[![InstaDrive Temporal](https://github.com/user-attachments/assets/09e0c4c7-f3dd-4fa6-819e-a024fab506c2)](https://github.com/user-attachments/assets/09e0c4c7-f3dd-4fa6-819e-a024fab506c2)
+
+
+
+https://github.com/user-attachments/assets/1b249f32-9b84-4d08-876c-6073aa24b14e
+
 
 Explanation: In MagicDrive-V2, the front orientation of the white car (FrontLeft and BackLeft views) changes over time. InstaDrive preserves instance attributes, demonstrating superior temporal consistency.
 
 #### b. Occlusion Hierarchy
 
 * **Panacea (baseline occlusion)**  
-[![Panacea Occlusion](https://github.com/user-attachments/assets/d1d25398-60c7-499f-b9e6-c59416eb5502)](https://github.com/user-attachments/assets/d1d25398-60c7-499f-b9e6-c59416eb5502)
+
+
+https://github.com/user-attachments/assets/42c6bb6a-c20b-4ba0-b4bd-0dbe4a1dd00c
+
 
 * **InstaDrive (occlusion)**  
-[![InstaDrive Occlusion](https://github.com/user-attachments/assets/d0f7df29-171f-418a-8a3d-444643e9f35b)](https://github.com/user-attachments/assets/d0f7df29-171f-418a-8a3d-444643e9f35b)
+
+
+https://github.com/user-attachments/assets/228d8eff-c1f8-4f10-8771-16d4602bcf17
+
 
 Explanation: A stationary box (FrontLeft view) is farther away, while a moving box is closer. In Panacea, the distant box incorrectly appears in front of the moving object. InstaDrive correctly renders the closer moving object in front.
 
 #### c. Spatial Localization
 
 * **Panacea (spatial example)**  
-[![Panacea Spatial](https://github.com/user-attachments/assets/d29e875b-bccf-4d82-afc8-e8e70a67339b)](https://github.com/user-attachments/assets/d29e875b-bccf-4d82-afc8-e8e70a67339b)
+
+
+https://github.com/user-attachments/assets/2a94f4d0-b06d-4f98-9887-c8627e3699db
+
 
 * **InstaDrive (spatial example)**  
-[![InstaDrive Spatial](https://github.com/user-attachments/assets/e65e07fa-3ed9-4e2a-ba20-9182e476c849)](https://github.com/user-attachments/assets/e65e07fa-3ed9-4e2a-ba20-9182e476c849)
+
+
+https://github.com/user-attachments/assets/5888df20-1af3-4d6b-8dc5-25725843cf62
+
 
 Explanation: In some baselines like MagicDrive-V2, FrontRight view objects may deviate from the bounding box. InstaDrive preserves accurate spatial alignment.
 
@@ -85,15 +104,27 @@ Explanation: In some baselines like MagicDrive-V2, FrontRight view objects may d
 ### 2.2 Additional Results
 
 * **a. Instance-Level Temporal Consistency**  
-[![Temporal More](https://github.com/user-attachments/assets/fd350c61-46a2-4920-aaad-1b8e1c487e1c)](https://github.com/user-attachments/assets/fd350c61-46a2-4920-aaad-1b8e1c487e1c)  
+
+
+https://github.com/user-attachments/assets/21fcffe2-1419-4537-86f5-87e24725e370
+
+
 Description: Demonstrates model consistency of instance attributes across complex scenarios.
 
 * **b. Occlusion Hierarchy**  
-[![Occlusion More](https://github.com/user-attachments/assets/5dca34c1-ab42-4988-befe-d9c376c909aa)](https://github.com/user-attachments/assets/5dca34c1-ab42-4988-befe-d9c376c909aa)  
+  
+
+https://github.com/user-attachments/assets/798ec166-58e2-47f5-ae37-90ff3c238a1f
+
+
 Description: Further confirms correct handling of occlusion relationships.
 
 * **c. Spatial Localization**  
-[![Spatial More](https://github.com/user-attachments/assets/ec81aca4-6128-4370-93a7-5cd4f5080502)](https://github.com/user-attachments/assets/ec81aca4-6128-4370-93a7-5cd4f5080502)  
+
+
+https://github.com/user-attachments/assets/071bdc1c-d726-4e23-90ef-d54b0db9cd85
+
+
 Description: Demonstrates model accuracy in spatial localization across different scenarios.
 
 ---
@@ -107,7 +138,11 @@ Please refer to the [Project Page](https://shanpoyang654.github.io/InstaDrive/pa
 Description: Simulates sudden braking to visualize behavior and generation under emergency conditions.
 
 * **Example B** — Vehicle cutting in from the right lane.  
-[![Cut-in Example](https://github.com/user-attachments/assets/4b51e9dc-fb1c-49a1-bba2-f51455a01220)](https://github.com/user-attachments/assets/4b51e9dc-fb1c-49a1-bba2-f51455a01220)  
+
+
+https://github.com/user-attachments/assets/0523382a-e55a-4c73-b7df-96e1bf0de960
+
+
 Description: Simulates lane cutting to test model stability and generation in complex traffic scenarios.
 
 ### 3.2 Long-term Generation (2x speed)
@@ -116,5 +151,6 @@ Please refer to the [Project Page](https://shanpoyang654.github.io/InstaDrive/pa
 Description: Demonstrates long-term generation consistency and coherent world modeling.
 
 ---
+
 
 
