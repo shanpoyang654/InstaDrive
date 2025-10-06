@@ -29,10 +29,20 @@ By incorporating these instance-aware mechanisms, InstaDrive achieves state-of-t
 
 ### 1.1 Layout Controllability
 
-* **示例 A** — Oncoming bus, parked car on center divider, pedestrian, roundabout, parked trucks. <video src="data/Layout_controlability/ex2.mp4" width="640" controls></video>
+* **示例 A** — Oncoming bus, parked car on center divider, pedestrian, roundabout, parked trucks.
+
+https://github.com/user-attachments/assets/3f3d0b02-1dcc-4231-bd5c-89a684134bfa
+
+
   描述：Drivable areas, sidewalks, and zebra crossings are faithfully generated following the road map projections. Objects in the scene are accurately placed and sized to align with their projected bounding boxes.
 
-* **示例 B** — Wait at intersection, pedestrians on sidewalk, turn right, cones, cross intersection. <video src="data/Layout_controlability/ex3.mp4" width="640" controls></video>
+* **示例 B** — Wait at intersection, pedestrians on sidewalk, turn right, cones, cross intersection.
+
+
+
+https://github.com/user-attachments/assets/3df501f5-76a8-4a2c-98e7-70904261647e
+
+
   描述：Small and densely packed objects are precisely rendered at their correct locations, following 3D bounding box coordinates. Objects track their previous attributes as guided by the instance flow, ensuring temporal consistency across frames.
 
 ---
@@ -43,13 +53,12 @@ By incorporating these instance-aware mechanisms, InstaDrive achieves state-of-t
 
 #### a. Instance-Level Temporal Consistency
 
-* **Panacea (baseline)** <video src="data/Qualitative_comparison/temporal/Panacea/pred.mp4" width="640" controls></video>
-
+* **MagicDrive-V2 (baseline)** 
 
 https://github.com/user-attachments/assets/abdabb8a-9c0d-466c-a552-5ff1ba2bf4ee
 
 
-* **InstaDrive** <video src="data/Qualitative_comparison/temporal/InstaDrive/pred.mp4" width="640" controls></video>
+* **InstaDrive** 
 
 
 https://github.com/user-attachments/assets/09e0c4c7-f3dd-4fa6-819e-a024fab506c2
@@ -59,17 +68,36 @@ https://github.com/user-attachments/assets/09e0c4c7-f3dd-4fa6-819e-a024fab506c2
 
 #### b. Occlusion Hierarchy
 
-* **Panacea (baseline occlusion example)** <video src="data/Qualitative_comparison/occlusion/Panacea/occ.mp4" width="640" controls></video>
+* **Panacea (baseline occlusion example)** 
 
-* **InstaDrive (occlusion example)** <video src="data/Qualitative_comparison/occlusion/InstaDrive/pred.mp4" width="640" controls></video>
+
+https://github.com/user-attachments/assets/d1d25398-60c7-499f-b9e6-c59416eb5502
+
+
+
+* **InstaDrive (occlusion example)** 
+
+
+https://github.com/user-attachments/assets/d0f7df29-171f-418a-8a3d-444643e9f35b
+
+
 
 说明：例子中有一个静止的箱子（FrontLeft 视角停车位）位于更远处，移动箱子更近。在 Panacea 中，远处的静止箱子错误地放在前面，遮挡了更近的移动车辆，违反预期的遮挡层次。在 InstaDrive 中，我们正确渲染了更近的移动箱子在前，远处静止箱子被适当遮挡。
 
 #### c. Spatial Localization（空间定位）
 
-* **Panacea (空间示例)** <video src="data/Qualitative_comparison/spatial/Panacea/pred.mp4" width="640" controls></video>
+* **Panacea (空间示例)** 
 
-* **InstaDrive (空间示例)** <video src="data/Qualitative_comparison/spatial/InstaDrive/pred.mp4" width="640" controls></video>
+
+https://github.com/user-attachments/assets/d29e875b-bccf-4d82-afc8-e8e70a67339b
+
+
+
+* **InstaDrive (空间示例)** 
+
+
+
+https://github.com/user-attachments/assets/e65e07fa-3ed9-4e2a-ba20-9182e476c849
 
 
 
@@ -81,13 +109,28 @@ https://github.com/user-attachments/assets/09e0c4c7-f3dd-4fa6-819e-a024fab506c2
 
 ### 2.2 More Results
 
-* **a. Instance-Level Temporal Consistency (更多示例)** <video src="data/Diversity/structure_and_content/ex5.mp4" width="640" controls></video>
+* **a. Instance-Level Temporal Consistency (更多示例)** 
+
+
+https://github.com/user-attachments/assets/fd350c61-46a2-4920-aaad-1b8e1c487e1c
+
+
   说明：展示模型在复杂场景中保持实例属性随时间一致性。
 
-* **b. Occlusion Hierarchy (更多示例)** <video src="data/Diversity/structure_and_content/occlusion1.mp4" width="640" controls></video>
+* **b. Occlusion Hierarchy (更多示例)** 
+
+
+https://github.com/user-attachments/assets/5dca34c1-ab42-4988-befe-d9c376c909aa
+
+
   说明：进一步确认模型在遮挡关系处理上的正确性。
 
-* **c. Spatial Localization (更多示例)** <video src="data/Diversity/structure_and_content/ex3.mp4" width="640" controls></video>
+* **c. Spatial Localization (更多示例)** 
+
+
+https://github.com/user-attachments/assets/ec81aca4-6128-4370-93a7-5cd4f5080502
+
+
   说明：展示模型在不同场景下维持对象空间定位的能力。
 
 ---
@@ -96,7 +139,8 @@ https://github.com/user-attachments/assets/09e0c4c7-f3dd-4fa6-819e-a024fab506c2
 
 ### 3.1 Corner Case in Autonomous Driving
 
-* **示例 a** — The vehicle ahead brakes, prompting the ego vehicle to decelerate and stop. <video src="data/Carla/brake2.mp4" width="640" controls></video>
+* **示例 a** — The vehicle ahead brakes, prompting the ego vehicle to decelerate and stop.
+
   描述：模拟前车刹车场景，评估在突发制动情况下的生成与行驶行为可视化。
 
 * **示例 b** — Vehicle cutting in from the right lane. <video src="data/Carla/cut-in.mp4" width="640" controls></video>
@@ -108,4 +152,5 @@ https://github.com/user-attachments/assets/09e0c4c7-f3dd-4fa6-819e-a024fab506c2
 描述：展示模型在长时序生成下保持世界一致性和内容连贯性的能力。
 
 ---
+
 
