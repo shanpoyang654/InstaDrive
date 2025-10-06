@@ -64,7 +64,7 @@ By incorporating these instance-aware mechanisms, InstaDrive achieves state-of-t
 * **InstaDrive (空间示例)** <video src="data/Qualitative_comparison/spatial/InstaDrive/pred.mp4" width="640" controls></video>
 
 
-[![Spatial Localization](./data/Qualitative_comparison/spatial/InstaDrive/pred.gif)](./data/Qualitative_comparison/spatial/InstaDrive/pred.mp4)
+
 
 
 说明：在 MagicDrive-V2 或其他 baseline 中，FrontRight 视角的车辆可能偏离 bounding box 控制信号。而在 InstaDrive 中，我们保持准确的空间定位，确保对象位置和尺寸符合控制信号。
