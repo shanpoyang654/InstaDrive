@@ -45,7 +45,15 @@ By incorporating these instance-aware mechanisms, InstaDrive achieves state-of-t
 
 * **Panacea (baseline)** <video src="data/Qualitative_comparison/temporal/Panacea/pred.mp4" width="640" controls></video>
 
+
+https://github.com/user-attachments/assets/abdabb8a-9c0d-466c-a552-5ff1ba2bf4ee
+
+
 * **InstaDrive** <video src="data/Qualitative_comparison/temporal/InstaDrive/pred.mp4" width="640" controls></video>
+
+
+https://github.com/user-attachments/assets/09e0c4c7-f3dd-4fa6-819e-a024fab506c2
+
 
 说明：In Panacea, the direction of the white car's front head (in FrontLeft and BackLeft view) changes over time. In InstaDrive, our model preserves the white car's attributes, demonstrating superior temporal consistency.
 
@@ -100,3 +108,4 @@ By incorporating these instance-aware mechanisms, InstaDrive achieves state-of-t
 描述：展示模型在长时序生成下保持世界一致性和内容连贯性的能力。
 
 ---
+
