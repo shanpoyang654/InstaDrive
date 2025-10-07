@@ -85,7 +85,7 @@ Explanation: A stationary box (FrontLeft view) is farther away, while a moving b
 
 #### c. Spatial Localization
 
-* **Panacea (spatial example)**  
+* **MagicDrive-V2 (spatial example)**  
 
 
 https://github.com/user-attachments/assets/2a94f4d0-b06d-4f98-9887-c8627e3699db
@@ -151,6 +151,7 @@ Please refer to the [Project Page](https://shanpoyang654.github.io/InstaDrive/pa
 Description: Demonstrates long-term generation consistency and coherent world modeling.
 
 ---
+
 
 
 
